@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable uncrustify via Homebrew
+  package:
+    name: uncrustify
+    state: latest
+  when: ansible_os_family == "Darwin"
